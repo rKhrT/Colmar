@@ -1,4 +1,122 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0.0rem;
+  margin: 0.0rem;
+}
+
+body {
+  background-color: #EEE;
+}
+
+/* Header */
+
+/* Header Mobile */
+
+#header {
+  align-items: stretch;
+  background-color: #FFF;
+  box-sizing: border-box;
+  display: block flex;
+  flex-direction: row;
+  height: 4.00rem;
+  padding-left: 1.50rem;
+  padding-right: 1.50rem;
+  justify-content: flex-start;
+}
+
+#header-mobile {
+  align-items: center;
+  display: inline flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#header-mobile-logo {
+  height: 2.50rem;
+}
+
+.header-mobile-item {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+
+.header-mobile-image {
+  height: 2.00rem;
+  vertical-align: middle;
+}
+
+#header-desktop-brand, #header-desktop-navigation {
+  display: none;
+}
+
+
+/* Header Desktop */
+
+@media only screen and (min-width: 512px) {
+
+  #header {
+    justify-content: space-between;
+  }
+
+  #header-mobile {
+    display: none;
+  }
+
+  #header-desktop-brand, #header-desktop-navigation {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  /* Header Desktop Brand */
+
+  #header-desktop-brand-logo {
+    height: 2.50rem;
+    margin-right: 0.5rem;
+  }
+
+  #header-desktop-brand a {
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+
+  #header-desktop-brand a:hover {
+    background-color: #EEE;
+    border-radius: 0.5rem;
+  }
+
+  #header-desktop-brand-colmar {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  #header-desktop-brand-academy {
+    color: #999;
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+
+  /* Header Desktop Navigation */
+
+  .header-desktop-navigation-item {
+    border-radius: 0.5rem;
+    display: inline;
+    padding: 0.5rem;
+  }
+
+  .header-desktop-navigation-item:hover {
+    background-color: #EEE;
+  }
+
+  .header-desktop-navigation-item a {
+    color: #999;
+    font-weight: 200;
+    text-decoration: none;
+  }
+
 }
