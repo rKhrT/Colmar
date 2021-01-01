@@ -591,3 +591,29 @@ body {
   }
 
 }
+
+#footer {
+  align-items: center;
+  box-sizing: border-box;
+  display: block flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3.00rem;
+  padding-left: 1.50rem;
+  padding-right: 1.50rem;
+  width: 100%;
+}
+
+#copyright {
+  color: #999;
+  font-size: 1.00rem;
+  font-weight: 200;
+}
+
+.footer-anchor {
+  color: #999;
+  font-size: 1.00rem;
+  font-weight: 400;
+  padding: 0.25rem;
+  text-decoration: none;
+}
