@@ -11,8 +11,6 @@ body {
 
 /* Header */
 
-/* Header Mobile */
-
 #header {
   align-items: stretch;
   background-color: #FFF;
@@ -24,6 +22,8 @@ body {
   padding-right: 1.50rem;
   justify-content: flex-start;
 }
+
+/* Header Mobile */
 
 #header-mobile {
   align-items: center;
@@ -117,6 +117,477 @@ body {
     color: #999;
     font-weight: 200;
     text-decoration: none;
+  }
+
+}
+
+/* Content */
+
+#content {
+  align-items: center;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Content Banner Mobile */
+
+#content-banner {
+  align-items: flex-start;
+  background: linear-gradient(#EEE, #999);
+  box-sizing: border-box;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#content-banner-image {
+  height: auto;
+  width: 100%;
+}
+
+#content-banner-container {
+  align-items: flex-start;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2.00rem 2.00rem;
+  text-align: center;
+}
+
+#content-banner-header {
+  color: #000;
+  font-size: 2.00rem;
+  font-weight: 800;
+  margin-bottom: 2.00rem;
+  text-shadow: 0.30rem 0.10rem 0.75rem #666;
+}
+
+#content-banner-message {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-bottom: 1.50rem;
+  text-shadow: 0.30rem 0.10rem 0.75rem #666;
+}
+
+#content-banner-anchor {
+  background-color: #666;
+  border-radius: 0.5rem;
+  color: #FFF;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-bottom: 1.00rem;
+  padding-top: 1.00rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Content Banner Desktop */
+
+@media only screen and (min-width: 512px) {
+
+  #content-banner {
+    align-items: center;
+    flex-direction: row;
+    padding: 2.00rem 1.50rem;
+  }
+
+  #content-banner-image {
+    border-radius: 0.5rem;
+    box-shadow: 0.20rem 0.20rem 0.75rem #333;
+    width: 60%;
+  }
+
+  #content-banner-anchor:hover {
+    background-color: #333;
+  }
+
+}
+
+/* Content Information Mobile */
+
+#content-main {
+  align-items: flex-start;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#content-main-information {
+  display: none;
+}
+
+#content-information {
+  align-items: flex-start;
+  background-color: #FFF;
+  box-sizing: border-box;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.content-information-cell {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1.00rem;
+}
+
+.content-information-cell-image-mobile {
+  box-shadow: 0.10rem 0.10rem 0.75rem #666;
+  border-radius: 0.5rem;
+  height: auto;
+  width: 100%;
+}
+
+.content-information-cell-image {
+  display: none;
+}
+
+.content-information-cell-detail {
+  align-items: flex-start;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1.00rem;
+  margin-left: 1.00rem;
+  margin-right: 1.00rem;
+}
+
+.content-information-cell-title {
+  color: #333;
+  font-size: 1.50rem;
+  font-weight: 600;
+}
+
+.content-information-cell-message {
+  color: #666;
+  font-size: 1.00rem;
+  font-weight: 200;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.content-information-cell-anchor {
+  color: #6495ED;
+  font-weight: 400;
+  font-size: 1.00rem;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 512px) {
+
+  #content-main {
+    align-items: stretch;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #content-main-information {
+    background-color: #FFF;
+    display: inline;
+    padding: 1.50rem 1.50rem;
+    width: 70%;
+  }
+
+  #content-main-information-image {
+    box-shadow: 0.10rem 0.10rem 0.75rem #666;
+    border-radius: 0.50rem;
+    width: 100%;
+  }
+
+  #content-main-header {
+    color: #333;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 1.00rem;
+  }
+
+  #content-main-message {
+    color: #666;
+    font-size: 1.00rem;
+    font-weight: 200;
+    margin-top: 0.75rem;
+  }
+
+  #content-main-reference {
+    color: #333;
+    font-size: 0.75rem;
+    font-weight: 200;
+    margin-top: 0.75rem;
+  }
+
+  #content-information {
+    border-left: 0.5px solid #EEE;
+    border-right: 0.5px solid #EEE;
+    display: inline flex;
+    width: 50%;
+  }
+
+  .content-information-cell {
+    align-items: flex-start;
+    box-sizing: border-box;
+    border: 0.5px solid #EEE;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0rem;
+    padding: 1.50rem;
+    width: 100%;
+  }
+
+  .content-information-cell-image-mobile {
+    display: none;
+  }
+
+  .content-information-cell-image {
+    box-shadow: 0.10rem 0.10rem 0.75rem #666;
+    border-radius: 0.5rem;
+    display: inline;
+    height: auto;
+    width: 35%;
+  }
+
+  .content-information-cell-detail {
+    justify-content: center;
+    margin-left: 1.50rem;
+    margin-right: 1.50rem;
+    margin-top: 0.00rem;
+    width: 65%;
+  }
+
+}
+
+/* Content Learning Mobile */
+
+#content-learning {
+  align-items: flex-start;
+  background-color: #FFF;
+  border-bottom: 0.5px solid #EEE;
+  border-top: 0.5px solid #EEE;
+  box-sizing: border-box;
+  display: blox flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.50rem;
+  width: 100%;
+}
+
+#content-learning-header {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#content-learning-courses {
+  align-items: flex-start;
+  display: block flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#content-learning-desktop {
+  display: none;
+}
+
+.content-learning-course-cell {
+  background-color: #CCC;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 1.00rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.content-learning-course-cell-title {
+  color: #000;
+  font-size: 1.00rem;
+  font-weight: 500;
+}
+
+/* Content Learning Desktop */
+
+@media only screen and (min-width: 512px) {
+
+  #content-learning {
+    background: linear-gradient(#EEE, #CCC);
+    padding: 2.00rem;
+  }
+
+  #content-learning-courses {
+    display: none;
+  }
+
+  #content-learning-desktop {
+    display: grid;
+    gap: 2.00rem;
+    grid-auto-rows: minmax(15.00rem, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2.00rem;
+    width: 100%;
+  }
+  
+  .content-learning-course-desktop-cell {
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: 0.10rem 0.10rem 0.75rem #999;
+  }
+
+  .content-learning-course-desktop-cell-image {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: 100%;
+  }
+
+  .content-learning-course-desktop-cell-description {
+    box-sizing: border-box;
+    padding: 1.00rem;
+  }
+
+  .content-learning-course-desktop-cell-title {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  .content-learning-course-desktop-cell-courses {
+    color: #666;
+    font-size: 1.00rem;
+    font-weight: 400;
+    margin-bottom: 0.50rem;
+    margin-top: 0.50rem;
+  }
+
+  .content-learning-course-desktop-cell-details {
+    color: #666;
+    font-size: 0.75rem;
+    font-weight: 200;
+    line-height: 1.00rem;
+  }
+
+}
+
+/* Content Thesis */
+
+#content-thesis {
+  align-items: center;
+  background-color: #FFF;
+  display: block flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#content-thesis-header {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.00rem;
+  margin-top: 2.00rem;
+}
+
+#content-thesis-video {
+  margin-bottom: 1.50rem;
+  width: 100%;
+}
+
+#content-thesis-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 512px) {
+
+  #content-thesis-video {
+    display: none;
+  }
+
+  #content-thesis-desktop {
+    align-items: stretch;
+    box-sizing: border-box;
+    display: inline flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2.00rem;
+    padding-left: 1.50rem;
+    margin-top: 2.00rem;
+    width: 100%;
+  }
+
+  #content-thesis-desktop-video-container {
+    box-sizing: border-box;
+    width: 60%;
+  }
+
+  #content-thesis-desktop-video {
+    width: 100%;
+  }
+
+  #content-thesis-desktop-header {
+    font-size: 1.50rem;
+    font-weight: 600;
+    margin-top: 2.00rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #content-thesis-desktop-message {
+    font-size: 1.00rem;
+    font-weight: 200;
+    line-height: 1.25rem;
+  }
+
+  #content-thesis-desktop-side {
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: block flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-left: 1.50rem;
+    margin-right: 1.50rem;
+    width: 40%;
+  }
+
+  .content-thesis-desktop-side-cell {
+    align-items: flex-start;
+    box-sizing: border-box;
+    border-bottom-color: #EEE;
+    border-bottom-style: solid;
+    border-bottom-width: 0.50px;
+    border-radius: 0.50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 1.50rem;
+    padding: 1.00rem;
+  }
+
+  .content-thesis-desktop-side-cell:hover {
+    background-color: #EEE;
+  }
+
+  .content-thesis-desktop-side-cell-image {
+    border-radius: 0.50rem;
+    height: auto;
+    width: 35%;
+  }
+
+  .content-thesis-desktop-side-cell-text-container {
+    margin-left: 1.00rem;
+  }
+
+  .content-thesis-desktop-side-cell-title {
+    font-size: 1.50rem;
+    font-weight: 600;
+    margin-bottom: 0.50rem;
+  }
+  
+  .content-thesis-desktop-side-cell-message {
+    font-size: 1.00rem;
+    font-weight: 200;
   }
 
 }
